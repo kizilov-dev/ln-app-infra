@@ -21,7 +21,6 @@ CREATE TABLE IF NOT EXISTS topics (
     title VARCHAR(200) NOT NULL,
     description TEXT,
     difficulty_level ENUM('beginner', 'intermediate', 'advanced') NOT NULL,
-    min_duration_seconds INT NOT NULL DEFAULT 30,
     is_active BOOLEAN DEFAULT TRUE,
     language VARCHAR(50) NOT NULL,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
